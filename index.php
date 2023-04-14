@@ -1,23 +1,14 @@
 <?php
 
 /**
- * @defgroup plugins_themes_default_child Default theme plugin
- */
-
-/**
- * @file plugins/themes/defaultChild/index.php
+ * @file index.php
  *
- * Copyright (c) 2014-2016 Simon Fraser University Library
- * Copyright (c) 2003-2016 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Copyright (c) 2014-2023 Simon Fraser University
+ * Copyright (c) 2003-2023 John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @ingroup plugins_themes_defaultChild
  * @brief Wrapper for default child theme plugin.
  *
  */
 
-require_once('DefaultChildThemePlugin.inc.php');
-
-return new DefaultChildThemePlugin();
-
-?>
+return new \APP\plugins\themes\defaultChild\DefaultChildThemePlugin();
