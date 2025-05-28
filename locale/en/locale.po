@@ -11,8 +11,8 @@ msgstr ""
 "PO-Revision-Date: 2020-11-27T16:11:07+00:00\n"
 "Language: \n"
 
-msgid "plugins.themes.defaultChild.name"
-msgstr "Example Child Theme"
+msgid "plugins.themes.ojsZul.name"
+msgstr "Tema Založbe UL"
 
-msgid "plugins.themes.defaultChild.description"
-msgstr "This theme is an example of a child theme of the default theme."
+msgid "plugins.themes.ojsZul.description"
+msgstr "Popravki osnovne teme za Založbo UL"

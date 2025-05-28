@@ -11,4 +11,4 @@
  *
  */
 
-return new \APP\plugins\themes\defaultChild\DefaultChildThemePlugin();
+return new \APP\plugins\themes\ojsZul\OjsZulThemePlugin();

@@ -13,7 +13,7 @@
 
 <version>
     <!-- The application should match the theme folder to ensure it is unique -->
-    <application>defaultChild</application>
+    <application>ojsZul</application>
 
     <!-- The type should always be `plugins.themes` -->
     <type>plugins.themes</type>
@@ -32,5 +32,5 @@
     <lazy-load>1</lazy-load>
 
     <!-- The class name of the plugin. See index.php -->
-    <class>DefaultChildThemePlugin</class>
+    <class>OjsZulThemePlugin</class>
 </version>

@@ -14,7 +14,7 @@ OJS 3 provides a simplified theme API. All themes reside in the `/plugins/themes
 
 - The `index.php` loads the theme's PHP class file and instantiates it. [View the example](index.php)
 - The `version.xml` file defines basic information about the theme. [View the example](version.xml)
-- The theme's PHP class file should reflect the name of the plugin (eg - DefaultChildThemePlugin.php). This is where the good stuff happens. [View the example](DefaultChildThemePlugin.php)
+- The theme's PHP class file should reflect the name of the plugin (eg - OjsZulThemePlugin.php). This is where the good stuff happens. [View the example](OjsZulThemePlugin.php)
 
 The theme's PHP class file is where the theme will load styles and scripts,
 define it's name and description, and do whatever else is desired.
@@ -23,7 +23,7 @@ Let's walk through an example. In the snippet below, we load OJS's `ThemePlugin`
 own class, `DefaultThemePlugin` which extends that class.
 
 ```php
-namespace APP\plugins\themes\defaultChild;
+namespace APP\plugins\themes\ojsZul;
 
 use PKP\plugins\ThemePlugin;
 
@@ -72,7 +72,7 @@ A child theme will extend an existing theme. It can add new scripts and styles,
 modify the parent theme's scripts and styles, and override template files in the
 parent theme.
 
-A child theme requires the same foundation as a regular theme. That means you'll need an [index.php](index.php) and [version.xml](version.xml) file, as well as a [class for your child theme](DefaultChildThemePlugin.php).
+A child theme requires the same foundation as a regular theme. That means you'll need an [index.php](index.php) and [version.xml](version.xml) file, as well as a [class for your child theme](OjsZulThemePlugin.php).
 
 You'll want to write a custom `init()` method. Let's look at an example.
 
@@ -91,7 +91,7 @@ If you remember from before, our parent theme loaded the `default` style. We're 
 
 In this sample child theme, we add a small LESS file with custom color variables. These new variable definitions will override those set in the parent theme.
 
-Take a look at the [full example](DefaultChildThemePlugin.php).
+Take a look at the [full example](OjsZulThemePlugin.php).
 
 ## Examples
 

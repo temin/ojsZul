@@ -1,21 +1,21 @@
 <?php
 
 /**
- * @file DefaultChildThemePlugin.php
+ * @file OjsZulThemePlugin.php
  *
  * Copyright (c) 2014-2023 Simon Fraser University
  * Copyright (c) 2003-2023 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @class DefaultChildThemePlugin
+ * @class OjsZulThemePlugin
  * @brief Example child theme plugin
  */
 
-namespace APP\plugins\themes\defaultChild;
+namespace APP\plugins\themes\ojsZul;
 
 use PKP\plugins\ThemePlugin;
 
-class DefaultChildThemePlugin extends ThemePlugin {
+class OjsZulThemePlugin extends ThemePlugin {
 	/**
 	 * Initialize the theme's styles, scripts and hooks. This is only run for
 	 * the currently active theme.
@@ -24,7 +24,7 @@ class DefaultChildThemePlugin extends ThemePlugin {
 	 */
 	public function init() {
 		$this->setParent('defaultthemeplugin');
-		$this->modifyStyle('stylesheet', ['addLess' => ['styles/remove-borders.less']]);
+		$this->modifyStyle('stylesheet', ['addLess' => ['styles/custom.less']]);
 	}
 
 	/**
@@ -32,7 +32,7 @@ class DefaultChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	public function getDisplayName() {
-		return __('plugins.themes.defaultChild.name');
+		return __('plugins.themes.ojsZul.name');
 	}
 
 	/**
@@ -40,10 +40,10 @@ class DefaultChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	public function getDescription() {
-		return __('plugins.themes.defaultChild.description');
+		return __('plugins.themes.ojsZul.description');
 	}
 }
 
 if (!PKP_STRICT_MODE) {
-    class_alias('\APP\plugins\themes\defaultChild\DefaultChildThemePlugin', '\DefaultChildThemePlugin');
+    class_alias('\APP\plugins\themes\ojsZul\OjsZulThemePlugin', '\OjsZulThemePlugin');
 }
